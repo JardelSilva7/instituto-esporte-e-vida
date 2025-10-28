@@ -4,36 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - Instituto Esporte é Vida</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
+    
     <header>
         <h1>Projetos do Instituto Esporte é Vida</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
+                <li>
+                    <a href="projetos.html">Projetos</a>
+                    <ul class="submenu">
+                        <li><a href="#voluntariado">Voluntariado</a></li>
+                        <li><a href="#doacoes">Doações</a></li>
+                    </ul>
+                </li>
                 <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
+            <button class="hamburger">&#9776;</button>
         </nav>
     </header>
 
+   
     <main>
-        <section>
+
+       
+        <section id="voluntariado">
             <h2>Voluntariado</h2>
             <p>Participe como voluntário em nossos projetos esportivos e transforme vidas.</p>
-            <img src="imagens/voluntarios.jpg" alt="Voluntários auxiliando jovens em atividade esportiva">
+            
+            <div class="section-cards">
+                <div class="card">
+                    <img src="imagens/Jovens da Comunidade.jpg" alt="Jovens da comunidade">
+                    <h3>Projeto Comunidade</h3>
+                    <p>Levar esporte e inclusão social para jovens da comunidade.</p>
+                    <button>Saiba mais</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/Esporte nas escolas.jpeg" alt="Trabalho em equipe">
+                    <h3>Projeto Esporte Escolar</h3>
+                    <p>Incentivar práticas esportivas em escolas públicas.</p>
+                    <button>Saiba mais</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/Trabalho Voluntario.jpg" alt="Outro projeto">
+                    <h3>Projeto Inclusão</h3>
+                    <p>Promover a inclusão de crianças com deficiência no esporte.</p>
+                    <button>Saiba mais</button>
+                    <img src="imagens/Outros Projetos.jpg" alt="Outro projeto">
+                </div>
+            </div>
         </section>
 
-        <section>
+        
+        <section id="doacoes">
             <h2>Doações</h2>
             <p>Contribua com nossos projetos e ajude a manter o esporte acessível a todos.</p>
-            <img src="imagens/doacoes.jpg" alt="Doações sendo entregues para jovens em comunidade">
+            <button>Saiba mais</button>
+            <div class="section-cards">
+                <div class="card">
+                    <img src="imagens/Trabalho Voluntario.jpg" alt="Doação 1">
+                    <h3>Campanha de Material Esportivo</h3>
+                    <p>Ajude doando bolas, uniformes e equipamentos para os jovens.</p>
+                    <button>Saiba mais</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/Doação 1.jpg" alt="Doação 2">
+                    <h3>Campanha de Alimentação</h3>
+                    <p>Doe alimentos para os atletas durante os treinos e competições.</p>
+                    <button>Saiba mais</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/Doação de Alimentos.jpg" alt="Doação 3">
+                    <h3>Campanha de Transporte</h3>
+                    <p>Ajude com transporte para levar os jovens aos eventos esportivos.</p>
+                    <button>Saiba mais</button>
+                    <img src="imagens/Transportes escolares.jpg" alt="Doação 4">
+                </div>
+            </div>
         </section>
+
     </main>
 
+    
     <footer>
         <p>&copy; 2025 Instituto Esporte é Vida</p>
     </footer>
+
+   
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+    </script>
+
 </body>
 </html>
+

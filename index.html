@@ -3,37 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto Esporte é Vida</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Início - Instituto Esporte é Vida</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
+    
     <header>
         <h1>Instituto Esporte é Vida</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
+            <button class="hamburger">&#9776;</button>
         </nav>
     </header>
 
+    
     <main>
-        <section>
-            <h2>Sobre nós</h2>
-            <p>O Instituto Esporte é Vida promove oportunidades de esporte para jovens de comunidades periféricas, incentivando saúde, disciplina e inclusão social.</p>
-            <img src="imagens/jovens-esporte.jpg" alt="Jovens jogando futebol em comunidade">
+       
+        <section class="hero">
+            <h2>Transformando vidas através do esporte</h2>
+            <p>Junte-se a nós e faça parte de projetos sociais que incentivam jovens e comunidades.</p>
+            <a href="cadastro.html"><button>Cadastre-se</button></a>
         </section>
 
-        <section>
-            <h2>Contato</h2>
-            <p>Email: contato@esportevida.org</p>
-            <p>Telefone: (11) 99999-9999</p>
+       
+        <section class="section-cards">
+            <div class="card">
+                <img src="imagens/Crianças Jogando Bola.jpg" alt="Jovens da comunidade">
+                <h3>Projetos Comunitários</h3>
+                <p>Levar esporte e inclusão social para jovens da comunidade.</p>
+                <button><a href="projetos.html#voluntariado">Saiba mais</a></button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/Projetos Comunitarios.jpg" alt="Trabalho em equipe">
+                <h3>Esporte Escolar</h3>
+                <p>Incentivar práticas esportivas em escolas públicas.</p>
+                <button><a href="projetos.html#voluntariado">Saiba mais</a></button>
+            </div>
+
+            <div class="card">
+                <img src="imagens/Esporte Escolar.jpg" alt="Doação 1">
+                <h3>Campanhas de Doação</h3>
+                <p>Contribua para manter o esporte acessível a todos.</p>
+                <button><a href="projetos.html#doacoes">Saiba mais</a></button>
+                <img src="imagens/Campanhas de Doação.jpg" alt="Doação 1">
+            </div>
         </section>
     </main>
 
+   
     <footer>
         <p>&copy; 2025 Instituto Esporte é Vida</p>
     </footer>
+
+   
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+    </script>
 </body>
 </html>

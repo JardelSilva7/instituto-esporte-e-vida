@@ -1,0 +1,241 @@
+
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  padding: var(--space-3);
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: var(--space-3);
+  margin: var(--space-2);
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: var(--space-2) 0 var(--space-1) 0;
+  font-size: var(--font-lg);
+  text-align: center;
+}
+
+.card p {
+  font-size: var(--font-md);
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.card button {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-md);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background-color: var(--color-secondary);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+button { 
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-md);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+button:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+button:active {
+  background-color: var(--color-accent);
+}
+
+button:disabled {
+  background-color: var(--color-neutral-dark);
+  cursor: not-allowed;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: var(--space-3);
+}
+
+.menu li {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: var(--color-primary);
+  padding: var(--space-2);
+  border-radius: 5px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin-bottom: var(--space-1);
+}
+
+.submenu li:last-child {
+  margin-bottom: 0;
+}
+
+.submenu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: var(--space-1) 0;
+}
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menu.active {
+    display: flex;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.cadastro-section {
+  max-width: 600px;
+  margin: var(--space-6) auto;
+  padding: var(--space-4);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cadastro-form label {
+  font-weight: bold;
+  font-size: var(--font-md);
+}
+
+.cadastro-form input,
+.cadastro-form select {
+  padding: var(--space-2);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: var(--font-md);
+}
+
+.cadastro-form input:focus,
+.cadastro-form select:focus {
+  outline: 2px solid var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.cadastro-form button {
+  align-self: flex-start;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-md);
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cadastro-form button:hover {
+  background-color: var(--color-secondary);
+}
+.hero {
+  text-align: center;
+  padding: var(--space-6) var(--space-3);
+  background-color: var(--color-secondary);
+  color: #fff;
+  border-radius: 10px;
+  margin: var(--space-4) auto;
+}
+
+.hero h2 {
+  font-size: var(--font-xl);
+  margin-bottom: var(--space-2);
+}
+
+.hero p {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-3);
+}
+
+.hero button {
+  background-color: var(--color-accent);
+  color: #222;
+  font-weight: bold;
+}
+
+.hero button:hover {
+  background-color: var(--color-success);
+}
+
+.hero button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  padding: var(--space-3);
+}
