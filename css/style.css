@@ -1,4 +1,4 @@
-@import url('variables.css');
+@import url('variables.css'); 
 
 * {
   margin: 0;
@@ -21,4 +21,11 @@ img {
   margin: 20px auto;
   border-radius: 8px;
 }
+
+/* Link ativo do menu */
+nav a.ativo {
+  font-weight: bold;
+  color: #007BFF; /* cor de destaque */
+}
+
 
