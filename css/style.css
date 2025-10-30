@@ -22,10 +22,9 @@ img {
   border-radius: 8px;
 }
 
-/* Link ativo do menu */
 nav a.ativo {
   font-weight: bold;
-  color: #007BFF; /* cor de destaque */
+  color: #007BFF; 
 }
 
 

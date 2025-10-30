@@ -3,10 +3,8 @@ import { homeTemplate, projetosTemplate, cadastroTemplate } from './templates.js
 export function carregarPagina(pagina) {
   const conteudo = document.getElementById('conteudo');
 
-  // Limpa o conteúdo antigo
   conteudo.innerHTML = '';
 
-  // Insere o conteúdo da página desejada
   switch(pagina) {
     case 'home':
       conteudo.innerHTML = homeTemplate;
