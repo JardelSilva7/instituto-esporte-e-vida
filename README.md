@@ -8,7 +8,6 @@ O sistema foi desenvolvido com HTML5, CSS3 e JavaScript, proporcionando uma inte
 - [Uso](#uso)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias)
-- [Instalação](#instalacao)
 
 ## Uso
 - Navegue pelas páginas principais: `index.html`, `cadastro.html` e `projetos.html`.
